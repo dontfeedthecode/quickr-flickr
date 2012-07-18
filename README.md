@@ -7,19 +7,13 @@ QuickrFlickr is a Flickr photo browser quickly thrown together by Tim Sheehan (@
 
 *Technology used:*
 
-```PHP5```
-
-```Twig Templates```
-
-```HTML5```
-
-```CSS3```
-
-```Modernizr```
-
-```Less CSS```
-
-```jQuery```
+* PHP5
+* Twig Templates
+* HTML5
+* CSS3
+* Modernizr
+* Less CSS
+* jQuery
 
 #### Installation
 
