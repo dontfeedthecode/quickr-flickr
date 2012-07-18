@@ -1,0 +1,17 @@
+# Turn rewrite engine on
+RewriteEngine On
+
+# Protect system files
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+RewriteRule ^(?:controllers|libs|models|views)\b.* /yahoo/index.php?route=$1 [PT,L]
+
+# Display existing files/directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite everything else to index.php
+RewriteRule ^(.*)$ /yahoo/index.php?route=$1 [PT,L]

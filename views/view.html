@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{ parent() }}
+    <div id="search_stats">
+    	<span>{{ title._content }}</span>
+    </div>
+    <div id="view_info">
+    	<span id="view_name">
+    	{{ owner.username }}
+    	{% if owner.realname %} ({{ owner.realname }}){% endif %}</span>
+    	<span>{{ owner.location }}</span>
+    	<span> - <a href="{{ return_to }}">Back</a></span>
+    </div>
+    <div id="view_image">
+    	<img src="{{ medium_image }}" alt="{{ title._content }}">
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+{% endblock %}
+
+{% block jquery %}
+    {{ parent() }}
+{% endblock %}

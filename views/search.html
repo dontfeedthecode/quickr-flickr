@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{ parent() }}
+    <div id="search_stats">
+    	<span>There are <em>{{ total_results }}</em> results for <em>{{ search_term }}</em></span>
+    </div>
+	{% if photos|length > 0 %}
+    <ul id="search_results">
+        {% for photo in photos %}
+            <li>
+            	<a href="{{ base_url }}view/{{ photo.id }}" title="{{ photo.title|e }}">
+            		<img src="{{ photo.thumb_url }}" alt="{{ photo.title|e }}" />
+            		<span>{{ photo.title|e }}</span>
+            	</a>
+            </li>
+        {% endfor %}
+    </ul>
+	{% endif %}
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+    {{ pagination|raw }}
+{% endblock %}
