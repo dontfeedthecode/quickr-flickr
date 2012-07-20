@@ -1,6 +1,8 @@
 Quickr Flickr
 =============
 
+### [Live demo](http://limelightdigitalusa.com/yahoo/ "QuickrFlickr")
+
 #### What is this?
 
 QuickrFlickr is a Flickr photo browser quickly thrown together by Tim Sheehan (@dontfeedthecode) in 8 hours. It uses an extremely light weight and restrictive custom MVC framework and custom Flickr class.
