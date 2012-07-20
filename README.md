@@ -1,7 +1,7 @@
 Quickr Flickr
 =============
 
-### [Live demo](http://limelightdigitalusa.com/yahoo/ "QuickrFlickr")
+## [Live demo](http://limelightdigitalusa.com/yahoo/ "QuickrFlickr")
 
 #### What is this?
 
